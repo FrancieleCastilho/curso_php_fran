@@ -2,6 +2,8 @@
 require_once("Pessoa.php");
 require_once("Funcoes.php");
 
-$pessoa1 = new Pessoa();
-$pessoa1->setNome("Pedro");
-imprimir($pessoa1->getNome());
+$pessoa = new Pessoa();
+$pessoa->setNome("Pedro");
+$pessoa->setEndereco("Av. Paulista");
+imprimir($pessoa->getNome());
+imprimir($pessoa->getEndereco());
