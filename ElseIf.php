@@ -1,15 +1,15 @@
 
 <?php
-$salario = 2200;
+$salario = 1600;
 
-if ($salario <= 1000){
+if ($salario <= 1000):
     echo "Você não paga imposto";
-}elseif($salario  <= 1500){
+elseif($salario  <= 1500):
     echo "Você paga 10% de imposto";
-}elseif($salario <=2000){
+elseif($salario <=2000):
     echo "Você paga 15% de imposto";
-}else{
+else:
     echo "Você paga 20% de imposto";
-}
+endif;
 
 
