@@ -8,7 +8,7 @@ $contador = $numInicial;
 while($contador <= $numFinal){
     
     
-    if($contador % $divisor == 0){
+    if(($contador % $divisor) == 0){
         echo $contador." <br>";
     }
     $contador +=1;
