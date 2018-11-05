@@ -1,8 +1,10 @@
 <?php
 
-$contador = 5000;
+$contador = 1;
 
-while($contador <= 5543){
-    echo $contador. " ";
+while($contador <= 40){
     $contador = $contador +1;
+    if($contador % 2 == 0 ){
+        echo $contador. " ";
+    }
 }
