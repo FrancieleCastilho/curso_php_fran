@@ -1,4 +1,4 @@
-<form action="CadastrarAluno.php" method="GET">
+<form action="CadastrarAluno.php" method="POST">
     <label> Nome </label><br>
     <input type="text" name="nome"/><br>
     <label> Turma </label><br>
