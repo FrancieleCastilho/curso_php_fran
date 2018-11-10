@@ -4,11 +4,15 @@
  echo "Turma: ". $_POST["turma"]."<br>";
  echo "Período: ";
  if ($_POST["periodo"]=="Manha"){
-    echo "Manhã";
+    echo "Manhã <br>";
  }elseif($_POST["periodo"]=="Tarde"){
-    echo "Tarde";
+    echo "Tarde <br>";
  }elseif($_POST["periodo"]=="Noite"){
-    echo "Noite";
+    echo "Noite <br>";
  }else{
      echo "Usuário não informou o período em que estuda";
  }
+echo "Cursa as matérias: ";
+foreach($_POST["materias"] as $materia){
+    echo $materia . ", ";
+}
