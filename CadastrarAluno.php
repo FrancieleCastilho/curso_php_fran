@@ -1,4 +1,13 @@
 <?php
+
+
+session_start();
+$requicao = 3;
+$_SESSION["CadastrarAluno"] = $requicao;
+
+echo $_SESSION["CadastrarAluno"] . "<br>";
+
+
  echo "Dados dos Alunos <br><br>";
 echo "E-mail: ".$_POST["email"]."<br>";
  echo "Nome: ". $_POST["nome"]." ".$_POST["sobrenome"]."<br>";
