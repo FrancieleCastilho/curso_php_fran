@@ -1,3 +1,8 @@
+<?php
+  $query = $_GET["q"];
+
+?>
+
 <!DOCTYPE  html>
 <html>
     <head>
@@ -21,6 +26,12 @@
     <body>
 
 
+        <form action="Conexao.php" method="GET">
+            <input type="text" name="q"/>
+            <input type="submit" value="Pesquisar"/>
+
+        </form>
+
         <?php
 
         $servidor = "cursophp_db_1";
@@ -35,6 +46,12 @@
         }
 
         $sql = "SELECT * FROM `usuarios` ";
+
+        if($query != ""){
+            $sql .= " WHERE email LIKE '%".$query."%'";
+
+        }
+
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0){

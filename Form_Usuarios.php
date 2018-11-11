@@ -49,5 +49,8 @@
 
             <input type="hidden" name="id" value="<?=$id?>"/>
             
+            </form>
+            <br><br>
+            <a href="Conexao.php">Voltar</a>
     </body>
 </html>
