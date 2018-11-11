@@ -24,11 +24,11 @@
         <?php
 
         $servidor = "cursophp_db_1";
-        $usuario = "root";
-        $senha = "phprs";
+        $user = "root";
+        $password = "phprs";
         $banco = "curso_php";
 
-        $conn = new  mysqli($servidor, $usuario, $senha, $banco);
+        $conn = new  mysqli($servidor, $user, $password, $banco);
 
         if ($conn->connect_error){
             die ("Erro ao conectar ao banco de dados". $conn->connect_error);
@@ -38,7 +38,8 @@
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0){
-            echo "o numero de registro é: ".  $result->num_rows;
+            echo "o numero de registro é: ".  $result->num_rows."<br>";
+            echo "<a href='Form_Usuarios.php'>Cadastrar Usuarios</a><br><br>";
             echo "<br><br>";
 
             echo "<table>";
