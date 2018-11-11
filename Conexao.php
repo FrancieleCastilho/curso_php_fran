@@ -48,6 +48,7 @@
                     <th>Email</th> 
                     <th>Senha</th> 
                     <th>Status</th>
+                    <th></th>
                   </tr>";
             
             echo "<tr>";
@@ -56,6 +57,7 @@
                 echo "<td>" .$row["email"]."</td>";
                 echo "<td>" .$row["senha"]."</td>";
                 echo "<td>" .($row["status"]? 'Ativo': "Desativo")."</td>";
+                echo "<td><a href='Apagar_Usuarios.php?id=".$row["id"]."'>Excluir</a></td>";
 
                 echo "</tr>";
                 
