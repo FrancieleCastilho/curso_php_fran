@@ -56,9 +56,12 @@
                 echo "<td> " .$row["id"]."</td>";
                 echo "<td>" .$row["email"]."</td>";
                 echo "<td>" .$row["senha"]."</td>";
-                echo "<td>" .($row["status"]? 'Ativo': "Desativo")."</td>";
-                echo "<td><a href='Apagar_Usuarios.php?id=".$row["id"]."'>Excluir</a></td>";
-
+                echo "<td>" .($row["status"]? 'Ativo': "Inativo")."</td>";
+                echo "<td>";
+                echo "<a href='Apagar_Usuarios.php?id=".$row["id"]."'>Excluir</a>";
+                echo "&nbsp;|&nbsp;";
+                echo "<a href='Form_Usuarios.php?id=".$row["id"]."'>Editar</a>";
+                echo "</td>";
                 echo "</tr>";
                 
             }
