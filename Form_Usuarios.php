@@ -40,12 +40,14 @@
             <input type="password" name="senha" value="<?=$senha?>"/><br>
             <label>Status</label><br>
             <select name="status">
-                <option value="0" <?=$row["status"]==0?"SELECTED":"";?> >Inativo</option>
-                <option value="1" <?=$row["status"]==1?"SELECTED":"";?> >Ativo</option>
+                <option value="0" <?=$status==0?"SELECTED":"";?> >Inativo</option>
+                <option value="1" <?=$status==1?"SELECTED":"";?> >Ativo</option>
             </select>
             <br><br>
 
             <input type="submit" value="Salvar"/>
+
+            <input type="hidden" name="id" value="<?=$id?>"/>
             
     </body>
 </html>
