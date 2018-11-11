@@ -16,3 +16,4 @@ echo "Cursa as matérias: ";
 foreach($_POST["materias"] as $materia){
     echo $materia . ", ";
 }
+echo "<br> Justificativa: ".$_POST["justificativa"];

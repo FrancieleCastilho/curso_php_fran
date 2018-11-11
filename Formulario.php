@@ -10,7 +10,7 @@
     <input type="radio" name="periodo" value="Tarde"/> Tarde
     <input type="radio" name="periodo" value="Noite"/> Noite <br>  
 
-    <label>Matérias</label><br>
+    <br><label>Matérias</label><br>
     <select name="materias[]" size="3" multiple>
         <option value="L">Lógica</option>
         <option value="P">PHP</option>
@@ -19,7 +19,10 @@
         <option value="A">Arquitetura</option>
         <option value="R">Redes</option>
         <option value="E">Engenharia de Software</option>
-    </select><br>
+    </select><br><br>
+
+    <label> Porque deseja fazer parte da nossa escola?</label><br>
+    <textarea name="justificativa" rows="5" cols="50"></textarea><br>
 
     <input type="submit" value ="Salvar"/><br>
 </form>
