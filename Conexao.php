@@ -46,6 +46,7 @@
                     <th>id</th> 
                     <th>Email</th> 
                     <th>Senha</th> 
+                    <th>Status</th>
                   </tr>";
             
             echo "<tr>";
@@ -53,6 +54,8 @@
                 echo "<td> " .$row["id"]."</td>";
                 echo "<td>" .$row["email"]."</td>";
                 echo "<td>" .$row["senha"]."</td>";
+                echo "<td>" .($row["status"]? 'Ativo': "Desativo")."</td>";
+
                 echo "</tr>";
                 
             }

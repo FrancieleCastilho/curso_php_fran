@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Tempo de geração: 11/11/2018 às 01:43
+-- Tempo de geração: 11/11/2018 às 03:19
 -- Versão do servidor: 5.7.23
 -- Versão do PHP: 7.2.8
 
@@ -31,8 +31,17 @@ SET time_zone = "+00:00";
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `email` varchar(100) COLLATE utf8_bin NOT NULL,
-  `senha` varchar(40) COLLATE utf8_bin NOT NULL
+  `senha` varchar(40) COLLATE utf8_bin NOT NULL,
+  `status` tinyint(4) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Fazendo dump de dados para tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `email`, `senha`, `status`) VALUES
+(1, 'franciele@gmail.co,', '1234', 1),
+(2, 'casteves@gmail.com', '123', 0);
 
 --
 -- Índices de tabelas apagadas
@@ -52,7 +61,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
