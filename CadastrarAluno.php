@@ -1,5 +1,6 @@
 <?php
  echo "Dados dos Alunos <br><br>";
+echo "E-mail: ".$_POST["email"]."<br>";
  echo "Nome: ". $_POST["nome"]." ".$_POST["sobrenome"]."<br>";
  echo "Turma: ". $_POST["turma"]."<br>";
  echo "Período: ";

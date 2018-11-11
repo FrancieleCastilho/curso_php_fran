@@ -1,4 +1,8 @@
 <form action="CadastrarAluno.php" method="POST">
+    <label> E-Mail </label><br>
+    <input type="text" name="email"/><br>
+    <label> Senha </label><br>
+    <input type="password" name="Senha"/><br>
     <label> Nome </label><br>
     <input type="text" name="nome"/><br>
     <label> Sobrenome </label><br>
