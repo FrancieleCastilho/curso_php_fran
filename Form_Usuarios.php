@@ -38,6 +38,8 @@
             <input type="text" name="email" value="<?=$email?>"/><br>
             <label>Senha</label><br>
             <input type="password" name="senha" value="<?=$senha?>"/><br>
+            <label>Confirmar Senha</label><br>
+            <input type="password" name="confirmar_senha" value="<?=$senha?>"/><br>
             <label>Status</label><br>
             <select name="status">
                 <option value="0" <?=$status==0?"SELECTED":"";?> >Inativo</option>
